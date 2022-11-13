@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8
+    # env_file:
+    #   - ./env/db.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - ./initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - "13306:3306"
+    command: --default-authentication-plugin=mysql_native_password
+  web:
+    build: .
+    env_file:
+      - ./env/web.env
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db  
+    command: flask run --host=0.0.0.0
+networks:
+  default:
+    name: flask_sample

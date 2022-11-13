@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "tailwindcss": "npx tailwindcss -i flaskr/-/css/tailwind-input.css -o flaskr/-/css/styles.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

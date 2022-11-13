@@ -1,0 +1,7 @@
+html {
+  font-family: ui-sans-serif;
+}
+
+.bg-twitter {
+  background-color: var(--tw-color);
+}

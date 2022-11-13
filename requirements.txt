@@ -1,0 +1,11 @@
+flask
+flask[async]
+jinja2
+flask-login
+flask_sqlalchemy
+PyMySQL
+cryptography
+
+pytz
+requests
+requests_oauthlib

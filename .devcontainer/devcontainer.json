@@ -1,0 +1,14 @@
+{
+	"name": "Python Sample",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+	],
+	"service": "web",
+	"workspaceFolder": "/usr/src/app/",
+	"customizations": {
+		"vscode": {}
+	},
+	"extensions": [
+		"ms-python.python"
+	]
+}

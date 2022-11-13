@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+
+<div>
+  <div class="mb-3">
+    <span>ホーム画面</span>
+    <div>
+      <img src="{{ current_user.tw_profile_image_url }}" alt="">
+      <span>{{ current_user.tw_screen_id }}</span>
+    </div>
+    <a href="/logout">
+      <button class="bg-red-600 text-white px-6 py-2 font-bold rounded-md">ログアウト</button>
+    </a>
+  </div>
+</div>
+
+{% endblock %}
