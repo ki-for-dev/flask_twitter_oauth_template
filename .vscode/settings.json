@@ -1,6 +1,4 @@
 {
   "python.analysis.extraPaths": [
-    "./flaskr/auth/config",
-    "./flaskr/auth"
   ]
 }
